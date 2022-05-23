@@ -1,0 +1,40 @@
+POST http://localhost:5000/accounts
+Content-Type: application/json
+
+{
+    "name": "Herlon Costa",
+    "balance": 2500
+}
+
+###
+
+GET http://localhost:5000/accounts
+
+###
+
+GET http://localhost:5000/accounts/4
+
+###
+
+DELETE http://localhost:5000/accounts/13
+
+###
+
+PUT http://localhost:5000/accounts/
+Content-Type: application/json
+
+{
+    "id": 4,
+    "name": "Herlon Souza",
+    "balance": 1780
+}
+
+###
+
+PATCH http://localhost:5000/accounts/updateBalance
+Content-Type: application/json
+
+{
+    "id": 2,
+    "balance": 1400
+}
